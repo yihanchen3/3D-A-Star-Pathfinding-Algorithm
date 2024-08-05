@@ -65,9 +65,13 @@ Three-Dimensional-Visual-Scene-Platform-for-Aerial-Cruise/
 ### Build Instructions
 
 1. Navigate to the project directory
-2. Build the `main.cpp`
-3. **Run the executable: `./bin/main.exe`**
-4. Enter the start point and end point, return the found path if one exists. Example: 
+2. Run the `main.cpp` using VSCode. Or Compile the project with g++, and this while generate a executable output:
+
+  ```bash
+  g++ .\main.cpp .\Star.cpp .\Node3D.cpp -o ..\bin\main
+  ```
+4. **Run the executable: `./bin/main.exe`**
+5. Enter the start point and end point, return the found path if one exists. Example: 
 
    ```
    | Description                    | Coordinates |
