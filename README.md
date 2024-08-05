@@ -48,7 +48,7 @@ Three-Dimensional-Visual-Scene-Platform-for-Aerial-Cruise/
   - This source file contains the `main()` function. It creates an instance of the `Star` class and calls the `Find_path()` method to find the shortest path between two points in the graph.
 - **include/Star.h, src/Star.cpp**
 
-  - HThis header file declares the `Star` class, which implements the A* algorithm. The `Star` class has methods for creating the graph (`Creatgraph()`) and finding the path (`Find_path()`). This source file defines the `Star` class. It includes the implementation of the `Creatgraph()` and `Find_path()` methods.
+  - This header file declares the `Star` class, which implements the A* algorithm. The `Star` class has methods for creating the graph (`Creatgraph()`) and finding the path (`Find_path()`). This source file defines the `Star` class. It includes the implementation of the `Creatgraph()` and `Find_path()` methods.
 - **include/Node3D.h**
 
   -  This header file declares the `Point` structure and the `Node3D` class. The `Point` structure represents a point in 3D space. The `Node3D` class represents a node in the pathfinding graph.
@@ -71,35 +71,22 @@ Three-Dimensional-Visual-Scene-Platform-for-Aerial-Cruise/
   g++ .\main.cpp .\Star.cpp .\Node3D.cpp -o ..\bin\main
   ```
 4. **Run the executable: `./bin/main.exe`**
-5. Enter the start point and end point, return the found path if one exists. Example: 
+5. Input the 3D start point and end point in the graph, and the program will output the shortest path between them. For example:
 
-   ```
-   | Description                    | Coordinates |
-   |--------------------------------|-------------|
-   | Please input the start point:  | 1 1 1       |
-   | Please input the end point:    | 20 20 20    |
-   | **PATH FOUND:**                |             |
-   |                                | 1 1 1       |
-   |                                | 2 2 2       |
-   |                                | 3 3 3       |
-   |                                | 4 4 4       |
-   |                                | 5 5 5       |
-   |                                | 6 6 6       |
-   |                                | 7 7 7       |
-   |                                | 8 8 8       |
-   |                                | 9 9 9       |
-   |                                | 10 10 10    |
-   |                                | 11 11 11    |
-   |                                | 12 12 12    |
-   |                                | 13 13 13    |
-   |                                | 14 14 14    |
-   |                                | 15 15 15    |
-   |                                | 16 16 16    |
-   |                                | 17 17 17    |
-   |                                | 18 18 18    |
-   |                                | 19 19 19    |
-   |                                | 20 20 20    |
-   ```
+```bash
+Please input the strat point:
+1 5 10
+Please input the end point:
+2 8 16
+a path is found 
+1 5 10
+1 6 11
+1 7 12
+1 8 13
+2 8 14
+2 7 15
+2 8 16
+```
 ## Note
 
 This project reads the graph data from an input file named `input.txt`. Make sure your input file exists in the 'input/' directory.
